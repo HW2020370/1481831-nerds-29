@@ -37,8 +37,11 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 .main-navigation {
-  font-family: "Roboto";
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
@@ -80,13 +83,7 @@ img {
   list-style: none;
 }
 
-.slider {
-  list-style: none;
-}
 
-.slider-list {}
-
-.visually-hidden {}
 
 .slider-item {
   font-weight: normal;
@@ -102,6 +99,14 @@ img {
   background: var(--basic-red);
   color: var(--basic-white);
   border-radius: 3px;
+}
+
+.button-site {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
 }
 
 .offer {}
@@ -234,6 +239,44 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+}
+
+.cost {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.select {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.indicator-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.next-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-light-gray);
+}
+
+.next-page-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-light-gray);
+
 }
 
 .contact {}
