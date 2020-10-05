@@ -14,8 +14,16 @@
   --basic-yellow-hover: #EAB534;
   --basic-yellow-pressing: #EAB534;
 }
-
-body {
+.page{
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display:grid;
+  grid-template-rows: min-content 1fr min-conent;
+  align-content: start;
+}
+  body {
   min-width: 1200px;
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -42,6 +50,8 @@ ul {
 }
 
 .main-navigation {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
@@ -51,19 +61,30 @@ ul {
 
 
 
-.main-header {}
+.main-header {
+  display: grid;
+}
 
-.main-header-logo {}
+.main-header-logo {
+  display: grid;
+  grid-template-columns: 1/2;
+  outline: 5px solid green;
+}
+.main-navigation-wrapper{
 
-.main-navigation {}
-
-
+}
 .site-navigation {
+  display:grid;
+  outline: 2px solid red;
+  grid-template-columns: 2/3;
   font-weight: 500;
   font-size: 16px;
   list-style: none;
 }
-
+.basket{
+  grid-template-columns: 17/24;
+  outline: 5px solid blue;
+}
 
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-light-gray);
@@ -108,8 +129,17 @@ ul {
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
+.offer-list-button-offer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 5px solid orange;
 
-.offer-list {}
+}
+.offer-list {
+
+
+
+}
 
 .offer-list-button-offer {
   list-style: none;
@@ -154,10 +184,19 @@ ul {
   border-radius: 3px;
   color: var(--basic-white);
 }
+.about-us-wrapper{
+  display: grid;
+  grid-template-columns: 7fr 4fr;
 
-.about-us {
-  list-style: none;
+  outline:5px solid lightskyblue;
 }
+.about-us {
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;
+  outline:5px solid orange;*/
+
+  list-style: none;
+  }
 
 .about-us-head {
   font-weight: 500;
@@ -192,9 +231,12 @@ ul {
   line-height: 24px;
   list-style: none;
 }
+.standarts {
+  display: grid;
+  /*grid-template-columns: 17/24;*/
+  outline:5px solid var(--basic-yellow-hover);
 
-.standarts {}
-
+}
 .number {
   list-style: none;
 }
@@ -211,26 +253,47 @@ ul {
   line-height: 18px;
 }
 
-.partner {}
+.partner {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  outline: 5px solid greenyellow;
+}
 
 .page-footer {}
 
+.our-adres{
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  outline: 5px solid violet;
+
+}
 .nerds-studio {
+  z-index:1;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-}
+  }
 
 .adres {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
 }
+.end{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 8fr;
+  outline: 5px solid red;
+}
 
 .slogan {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+
+}
+.slogan-page{
+  grid-template-columns: 9/16;
+  outline: 5px solid red;
 }
 
 .nerd-design-studio.slogan-page {
@@ -279,12 +342,20 @@ ul {
 
 .contact {}
 
-.social-icons {}
+.social-icons {
+
+
+}
 
 .social-icons-vk {}
 
-.social-icons-fb {}
 
-.social-icons-ins {}
+.social-icons-fb {
+
+}
+
+.social-icons-ins {
+
+}
 
 .button-write {}
